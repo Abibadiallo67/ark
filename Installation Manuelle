@@ -1,0 +1,20 @@
+# Cloner le projet
+git clone <repository-url>
+cd sso-auth-system
+
+# Installer les dépendances
+npm install
+
+# Configurer l'environnement
+cp .env.example .env
+# Éditer .env avec vos valeurs
+
+# Démarrer MongoDB et Redis
+# Sur macOS: brew services start mongodb-community redis
+# Sur Ubuntu: sudo systemctl start mongod redis
+
+# Exécuter les migrations
+npm run migrate
+
+# Démarrer le serveur
+npm run dev
