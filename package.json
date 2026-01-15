@@ -1,0 +1,38 @@
+{
+  "name": "sso-auth-system",
+  "version": "1.0.0",
+  "description": "Système SSO professionnel avec gestion de crédits et réseau d'affiliés",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "migrate": "node migrations/migrate.js",
+    "seed": "node seeds/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "cors": "^2.8.5",
+    "joi": "^17.9.0",
+    "redis": "^4.6.0",
+    "socket.io": "^4.5.0",
+    "winston": "^3.8.2",
+    "swagger-ui-express": "^4.6.0",
+    "express-validator": "^6.14.2",
+    "nodemailer": "^6.9.0",
+    "uuid": "^9.0.0",
+    "express-session": "^1.17.3",
+    "connect-redis": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
